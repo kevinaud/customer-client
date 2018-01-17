@@ -1,0 +1,11 @@
+<div class="container" *ngIf="stores">
+    
+    <div class="row">
+        <h1>Nearest Locations</h1>
+    </div>
+
+    <div class="row" *ngFor="let store of stores">
+        <store-search-result-view [store]="store"></store-search-result-view> 
+    </div>
+
+</div>

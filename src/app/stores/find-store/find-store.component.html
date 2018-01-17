@@ -1,0 +1,21 @@
+<div class="container">
+    
+    <div class="row">
+        <h1>Please Enter your Zipcode</h1>
+    </div>
+
+    <div class="row">
+
+        <!-- ZIPCODE INPUT FIELD -->
+        <mat-form-field> 
+            <input matInput placeholder="Zipcode" [(ngModel)]="zipcode">
+        </mat-form-field> 
+
+        <!-- SEARCH BUTTON -->
+        <button mat-mini-fab color="accent" class="search-btn" (click)="search()">
+            <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+    </div>
+
+</div>

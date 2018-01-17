@@ -1,0 +1,18 @@
+<div class="container" *ngIf="($store | async)">
+    
+    <!-- STORE NAME -->
+    <div class="row">
+        <h1>{{ store.name }} Store</h1>
+    </div>
+
+    <!-- STORE ADDRESS -->
+    <div class="row">
+        <store-address-view [address]="store.address"></store-address-view> 
+    </div>
+
+    <!-- STORE HOURS -->
+    <div class="row">
+        <store-hours-view [hours]="store.hours"></store-hours-view> 
+    </div>
+
+</div>

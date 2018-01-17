@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.find-store-btn {
+    margin: auto;
+    margin-top: 30px;
+}
